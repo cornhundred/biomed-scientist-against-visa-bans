@@ -1,3 +1,16 @@
+<style>
+
+h2, h3 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-transform: capitalize;
+}
+body {
+  line-height: 1.0;
+}
+
+</style>
+
 <div id="observablehq-e3658d15"></div>
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -5,3 +18,4 @@ import define from "https://api.observablehq.com/@ismms-himc/visa-signatures.js?
 const inspect = Inspector.into("#observablehq-e3658d15");
 (new Runtime).module(define, name => name === "viewof sig_list" ? inspect() : undefined);
 </script>
+
